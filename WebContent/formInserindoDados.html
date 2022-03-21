@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Trabalhando com DAO e Model 2 (MVC)</title>
+</head>
+<body>
+<form action="LivrariaServlet?cmd=addliv" method="post">
+	<table>
+		<tr>
+			<td>ISBN:</td><td><input type="text" name="isbn" /></td>
+		</tr>
+		<tr>
+			<td>T&iacute;tulo:</td><td><input type="text" name="titulo" /></td>
+		</tr>
+		<tr>
+			<td>Edi&ccedil;&atilde;o:</td><td><input type="text" name="edicao" /></td>
+		</tr>
+		<tr>
+			<td>Publica&ccedil;&atilde;o:</td><td><input type="text" name="publicacao" /></td>
+		</tr>
+		<tr>
+			<td>Descri&ccedil;&atilde;o:</td>
+			<td>
+				<textarea name="descricao" rows="5" cols="25"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" name="btn_cadastrar" value="Cadastrar" />
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

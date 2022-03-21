@@ -1,0 +1,10 @@
+Na página 216 foi solicitado a inclusão de dois jar.
+commons-fileupload-1.1.1.jar
+commons-io-1.2.jar
+decidi seguir o livro para evitar problemas com métodos diferentes em uma nova versão.
+--------------------------------------------------------------------------------------------
+Para trabalhar com xml são necessários 4 jars
+serializer, xalan, xerceslmpl, xml-apis.
+pelo visto esses jars estão ultrapassados, mas pra seguir o livro, utilizei.
+------------------------------------------------------------------------------------------
+

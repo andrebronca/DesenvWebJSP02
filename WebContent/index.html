@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login e senha</title>
+</head>
+<body>
+	<form action="sce" method="post">
+	Login:<input type="text" name="usuario" id="usuario" /><br />
+	Senha:<input type="text" name="senha" id="senha" /><br />
+	<input type="submit" value="Logar" />
+	</form>
+	<a href="tcgs?nome=Andre&id=123">Usuario e senha via get</a><br/>
+	<a href="tcgs?curso=Livro">Curso</a><br />
+	<hr />
+	<h2>Trabalhando com outros métodos de HttpServletRequest</h2>
+	<form action="tomcs" method="post">
+		<h2>Escolha as músicas</h2>
+		<p>
+			<input name="musica" type="checkbox" value="rock" />Rock<br />
+			<input name="musica" type="checkbox" value="pop" />Pop<br />
+			<input name="musica" type="checkbox" value="dance" />Dance<br />
+			<input name="musica" type="checkbox" value="mpb" />Mpb<br />
+			<input name="musica" type="checkbox" value="sernanejo" />Sertanejo<br />
+		</p>
+		<input type="submit" name="btnEnviar" value="Enviar" />
+	</form>
+	<hr />
+	<h2>Redirecionamento, avaliando usuário válido ou inválido</h2>
+	<form action="rcs" method="post">
+		Login:<input type="text" name="usuario" /><br />
+		Senha:<input type="password" name="senha" /><br />
+		<input type="submit" value="Logar" />
+	</form>
+	<hr />
+	<h2>Enviando formulário via post para JSP</h2>
+	<form action="recebe.jsp" method="post">
+		Login:<input type="text" name="usuario" /><br />
+		Senha:<input type="password" name="senha" /><br />
+		<input type="submit" value="Logar" />
+	</form>
+	<hr />
+	<h2>Indo para a página de errors</h2>
+	<a href="tratErrorsUsandoJsp.jsp" >Tratando errors</a>
+</body>
+</html>

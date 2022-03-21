@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<taglib>
+	<description>Tag Library</description>
+	<jsp-version>2.1</jsp-version>
+	<tlib-version>1.0</tlib-version>
+	<shortname></shortname>
+	<uri>loop</uri>
+	<tag>
+		<name>loop</name>
+		<tagclass>meupacote.LoopTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>contar</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

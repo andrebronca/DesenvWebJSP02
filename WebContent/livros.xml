@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livros>
+	<livro>
+		<isbn>85-7393-486-7</isbn>
+		<titulo>Dominando Eclipse</titulo>
+		<edicao>1</edicao>
+		<publicacao>2006</publicacao>
+		<descricao>Conheça a IDE mais usada do momento</descricao>
+	</livro>
+	<livro>
+		<isbn>85-7393-519-7</isbn>
+		<titulo>Dominando NetBeans</titulo>
+		<edicao>1</edicao>
+		<publicacao>2006</publicacao>
+		<descricao>Conheça as principais características dessa IDE</descricao>
+	</livro>
+	<livro>
+		<isbn>85-7393-543-7</isbn>
+		<titulo>Dominando Ajax</titulo>
+		<edicao>1</edicao>
+		<publicacao>2007</publicacao>
+		<descricao>Domine o Ajax</descricao>
+	</livro>
+</livros>

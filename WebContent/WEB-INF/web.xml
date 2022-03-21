@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID">
+	<display-name>DesenvWebJSP02</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<session-config>
+		<session-timeout>5</session-timeout><!-- tempo em minutos -->
+	</session-config>
+	<jsp-config> <!-- se não usar isso dá erro na taglib -->
+	<!-- https://stackoverflow.com/questions/3775264/why-is-taglib-giving-me-a-problem-in-my-web-xml -->
+		<taglib>
+			<taglib-uri>desenvolvimentoTaglibs</taglib-uri>
+			<taglib-location>/WEB-INF/tld/TrabComTaglib.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>taglibInput</taglib-uri>
+			<taglib-location>/WEB-INF/tld/TrabComTaglib2.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>loopTag</taglib-uri>
+			<taglib-location>/WEB-INF/tld/LoopTag.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>tagsCondicionais</taglib-uri>
+			<taglib-location>/WEB-INF/tld/TagsCondicionais.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>tagSimpleTag</taglib-uri>
+			<taglib-location>/WEB-INF/tld/UtilSimpleTags.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>tagSimpleDinamica</taglib-uri>
+			<taglib-location>/WEB-INF/tld/SimpleTagDinamica.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<error-page>
+		<exception-type>java.lang.NumberFormatException</exception-type>
+		<location>/erro_nfe.html</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.ArithmeticException</exception-type>
+		<location>/erro_ae.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+	<!-- configurado um JNDI pool de conexões no tomcat, ver arquivo server.xml (últimas linhas) -->
+	<resource-ref>
+		<description>postgresql datasource example</description>
+		<res-ref-name>jdbc/bdjavajsp</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+</web-app>

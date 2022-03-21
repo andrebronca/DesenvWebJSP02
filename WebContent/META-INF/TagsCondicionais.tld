@@ -1,0 +1,28 @@
+<?sml version="1.0" encoding="UTF-8" ?>
+<taglib>
+	<description>Tag Library</description>
+	<jsp-version>2.1</jsp-version>
+	<tlib-version>1.0</tlib-version>
+	<shortname></shortname>
+	<uri>TagsCondicionais</uri>
+	<tag>
+		<name>if</name>
+		<tagclass>meupacote.IfTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<name>condicao</name>
+		<tagclass>meupacote.IfCondTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<name>then</name>
+		<tagclass>meupacote.IfThenTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	<tag>
+		<name>else</name>
+		<tagclass>meupacote.IfElseTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+</taglib>

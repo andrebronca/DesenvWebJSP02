@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<description>Utilizando SimpleTag Dinamica</description>
+	<jsp-version>2.1</jsp-version>
+	<tlib-version>1.0</tlib-version>
+	<shortname></shortname>
+	<uri>UtilTagSimplesDinamica</uri>
+	<tag>
+		<name>nome</name>
+		<tag-class>meupacote.SimpleTagDinamica</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>nome</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

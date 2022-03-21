@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.2</jspversion>
+	<shortname></shortname>
+	<uri>desenvolvendoTaglibs</uri>
+	
+	<tag>
+		<name>frase</name>
+		<tagclass>meupacote.DesenvolvendoTaglibs</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>
+			Desenvolvendo com taglibs
+		</info>
+	</tag>
+</taglib>

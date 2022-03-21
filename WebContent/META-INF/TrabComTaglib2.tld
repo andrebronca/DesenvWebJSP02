@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<taglib>
+	<description>Tag library</description>
+	<jspversion>2.1</jspversion>
+	<tlib-version>1.0</tlib-version>
+	<shortname></shortname>
+	<uri>inputTags</uri>
+	
+	<tag>
+		<name>inputTag</name>
+		<tagclass>meupacote.InputTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>type</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>value</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>size</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>maxLength</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+</taglib>

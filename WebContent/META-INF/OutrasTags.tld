@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib>
+	<description>Tag Library</description>
+	<jsp-version>2.1</jsp-version>
+	<tlib-version>1.0</tlib-version>
+	<shortname></shortname>
+	<uri>libraryTags</uri>
+	
+	<!-- procedimento para exportar tags em um jar -->
+	<tag-file>
+		<name>frase</name>
+		<path>/META-INF/tags/frase.tag</path> <!-- copiadas aqui -->
+	</tag-file>
+	<tag-file>
+		<name>input</name>
+		<path>/META-INF/tags/input.tag</path>
+	</tag-file>
+	<tag-file>
+		<name>tagdinamica</name>
+		<path>/META-INF/tags/tagdinamica.tag</path>
+	</tag-file>
+</taglib>
